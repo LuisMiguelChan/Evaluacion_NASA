@@ -24,8 +24,6 @@ namespace Evaluacion_NASA
         {
             try
             {
-
-
                 string[] Parameters = Environment.GetCommandLineArgs();
 
                 // Read the Nasa sys connection string configuration...

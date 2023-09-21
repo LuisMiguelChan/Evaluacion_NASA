@@ -1,6 +1,6 @@
 ﻿namespace Evaluacion_NASAWinForms.Forms
 {
-    partial class xENP110010
+    partial class xENC140010
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(xENP110010));
-            this.GuardarbarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(xENC140010));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.RibbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LargeImage)).BeginInit();
@@ -42,9 +41,6 @@
             // 
             this.RibbonControl.ApplicationButtonImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("RibbonControl.ApplicationButtonImageOptions.Image")));
             this.RibbonControl.ExpandCollapseItem.Id = 0;
-            this.RibbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.GuardarbarButtonItem});
-            this.RibbonControl.MaxItemId = 50;
             // 
             // 
             // 
@@ -99,15 +95,6 @@
             // 
             this.XtraConsoftToolBar1.Location = new System.Drawing.Point(753, 49);
             // 
-            // GuardarbarButtonItem
-            // 
-            this.GuardarbarButtonItem.Caption = "Guardar";
-            this.GuardarbarButtonItem.Id = 49;
-            this.GuardarbarButtonItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("GuardarbarButtonItem.ImageOptions.Image")));
-            this.GuardarbarButtonItem.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("GuardarbarButtonItem.ImageOptions.LargeImage")));
-            this.GuardarbarButtonItem.Name = "GuardarbarButtonItem";
-            this.GuardarbarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.GuardarbarButtonItem_ItemClick);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -117,20 +104,20 @@
             this.dataGridView1.Size = new System.Drawing.Size(753, 370);
             this.dataGridView1.TabIndex = 7;
             // 
-            // xENP110010
+            // xENC140010
             // 
-            this.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("xENP110010.Appearance.Image")));
+            this.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("xENC140010.Appearance.Image")));
             this.Appearance.Options.UseImage = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("xENP110010.IconOptions.Icon")));
+            this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("xENC140010.IconOptions.Icon")));
             this.Location = new System.Drawing.Point(0, 0);
-            this.Name = "xENP110010";
-            this.Text = "xENP100011";
-            this.Load += new System.EventHandler(this.xENP110010_Load);
+            this.Name = "xENC140010";
+            this.Text = "xENC140010";
+            this.Load += new System.EventHandler(this.xENC140010_Load);
             this.Controls.SetChildIndex(this.RibbonControl, 0);
             this.Controls.SetChildIndex(this.XtraConsoftToolBar1, 0);
             this.Controls.SetChildIndex(this.dataGridView1, 0);
@@ -146,7 +133,6 @@
 
         #endregion
 
-        private DevExpress.XtraBars.BarButtonItem GuardarbarButtonItem;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
