@@ -21,7 +21,17 @@ namespace Evaluacion_NASAWinForms.Forms
             blblForma.Caption = this.Name;
             Evaluacion_NASACore.BusinessLayer.CLS_DBCURSOS_BAL CursosBal = new Evaluacion_NASACore.BusinessLayer.CLS_DBCURSOS_BAL();
             DataTable data = CursosBal.GetTable();
-            dataGridView1.DataSource = data;
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Identificador");
+            dt.Columns.Add("Nombre curso");
+            dt.Columns.Add("Fecha alta");
+            dt.Columns.Add("Costo curso");
+
+            foreach (DataRow row in data.Rows)
+            {
+                dt.Rows.Add(row["NUM_DOC"],row["nomcurso"],row["FHA_ALTA"],row["importe"]);
+            }
+            dataGridView1.DataSource = dt;
         }
 
         private void Btn_BuscarArch_Click(object sender, EventArgs e)

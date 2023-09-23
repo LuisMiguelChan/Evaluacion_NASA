@@ -29,22 +29,40 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(xENC150010));
-            this.DateDesde = new System.Windows.Forms.DateTimePicker();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.DateHasta = new System.Windows.Forms.DateTimePicker();
-            this.Corte = new DevExpress.XtraEditors.SimpleButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.RibbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LargeImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SmallImageStatus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainApplicationMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
+            this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             this.SuspendLayout();
             // 
             // RibbonControl
@@ -106,76 +124,179 @@
             this.XtraConsoftToolBar1.Location = new System.Drawing.Point(656, 49);
             this.XtraConsoftToolBar1.Size = new System.Drawing.Size(47, 218);
             // 
-            // DateDesde
+            // layoutControl1
             // 
-            this.DateDesde.Location = new System.Drawing.Point(89, 93);
-            this.DateDesde.MaxDate = new System.DateTime(2023, 9, 21, 0, 0, 0, 0);
-            this.DateDesde.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
-            this.DateDesde.Name = "DateDesde";
-            this.DateDesde.Size = new System.Drawing.Size(200, 21);
-            this.DateDesde.TabIndex = 7;
-            this.DateDesde.Value = new System.DateTime(2023, 9, 21, 0, 0, 0, 0);
+            this.layoutControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.layoutControl1.Controls.Add(this.button1);
+            this.layoutControl1.Controls.Add(this.textBox1);
+            this.layoutControl1.Controls.Add(this.label3);
+            this.layoutControl1.Controls.Add(this.dataGridView1);
+            this.layoutControl1.Controls.Add(this.dateTimePicker2);
+            this.layoutControl1.Controls.Add(this.label2);
+            this.layoutControl1.Controls.Add(this.dateTimePicker1);
+            this.layoutControl1.Controls.Add(this.label1);
+            this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutControl1.Location = new System.Drawing.Point(0, 49);
+            this.layoutControl1.Name = "layoutControl1";
+            this.layoutControl1.Root = this.Root;
+            this.layoutControl1.Size = new System.Drawing.Size(656, 218);
+            this.layoutControl1.TabIndex = 7;
+            this.layoutControl1.Text = "layoutControl1";
             // 
-            // textEdit1
+            // button1
             // 
-            this.textEdit1.EditValue = "Mostrar de";
-            this.textEdit1.Location = new System.Drawing.Point(21, 94);
-            this.textEdit1.MenuManager = this.RibbonControl;
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(62, 20);
-            this.textEdit1.TabIndex = 8;
+            this.button1.Location = new System.Drawing.Point(533, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 20);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Mostrar Corte";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textEdit2
+            // textBox1
             // 
-            this.textEdit2.EditValue = "hasta";
-            this.textEdit2.Location = new System.Drawing.Point(295, 94);
-            this.textEdit2.MenuManager = this.RibbonControl;
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(37, 20);
-            this.textEdit2.TabIndex = 9;
+            this.textBox1.Location = new System.Drawing.Point(557, 186);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(87, 20);
+            this.textBox1.TabIndex = 10;
             // 
-            // DateHasta
+            // label3
             // 
-            this.DateHasta.Location = new System.Drawing.Point(339, 93);
-            this.DateHasta.MaxDate = new System.DateTime(2023, 9, 21, 0, 0, 0, 0);
-            this.DateHasta.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
-            this.DateHasta.Name = "DateHasta";
-            this.DateHasta.Size = new System.Drawing.Size(200, 21);
-            this.DateHasta.TabIndex = 10;
-            this.DateHasta.Value = new System.DateTime(2023, 9, 21, 0, 0, 0, 0);
-            // 
-            // Corte
-            // 
-            this.Corte.Location = new System.Drawing.Point(562, 92);
-            this.Corte.Name = "Corte";
-            this.Corte.Size = new System.Drawing.Size(75, 23);
-            this.Corte.TabIndex = 11;
-            this.Corte.Text = "Realizar corte";
-            this.Corte.Click += new System.EventHandler(this.Corte_Click);
+            this.label3.Location = new System.Drawing.Point(502, 36);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(142, 146);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "label3";
+            this.label3.Visible = false;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 120);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 36);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(415, 141);
-            this.dataGridView1.TabIndex = 12;
+            this.dataGridView1.Size = new System.Drawing.Size(486, 170);
+            this.dataGridView1.TabIndex = 8;
             // 
-            // textBox1
+            // dateTimePicker2
             // 
-            this.textBox1.Location = new System.Drawing.Point(493, 196);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 13;
+            this.dateTimePicker2.Location = new System.Drawing.Point(331, 12);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(198, 21);
+            this.dateTimePicker2.TabIndex = 7;
             // 
-            // textEdit3
+            // label2
             // 
-            this.textEdit3.EditValue = "Total corte:";
-            this.textEdit3.Location = new System.Drawing.Point(510, 156);
-            this.textEdit3.MenuManager = this.RibbonControl;
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(66, 20);
-            this.textEdit3.TabIndex = 14;
+            this.label2.Location = new System.Drawing.Point(289, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 20);
+            this.label2.TabIndex = 6;
+            this.label2.Text = " hasta ";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(83, 12);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(202, 21);
+            this.dateTimePicker1.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Mostrar de: ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Root
+            // 
+            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.Root.GroupBordersVisible = false;
+            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem1,
+            this.layoutControlItem2,
+            this.layoutControlItem3,
+            this.layoutControlItem4,
+            this.layoutControlItem5,
+            this.layoutControlItem6,
+            this.layoutControlItem7,
+            this.layoutControlItem8});
+            this.Root.Name = "Root";
+            this.Root.Size = new System.Drawing.Size(656, 218);
+            this.Root.TextVisible = false;
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.label1;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(71, 24);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.TextVisible = false;
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.Control = this.dateTimePicker1;
+            this.layoutControlItem2.Location = new System.Drawing.Point(71, 0);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(206, 24);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem2.TextVisible = false;
+            // 
+            // layoutControlItem3
+            // 
+            this.layoutControlItem3.Control = this.label2;
+            this.layoutControlItem3.Location = new System.Drawing.Point(277, 0);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Size = new System.Drawing.Size(42, 24);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem3.TextVisible = false;
+            // 
+            // layoutControlItem4
+            // 
+            this.layoutControlItem4.Control = this.dateTimePicker2;
+            this.layoutControlItem4.Location = new System.Drawing.Point(319, 0);
+            this.layoutControlItem4.Name = "layoutControlItem4";
+            this.layoutControlItem4.Size = new System.Drawing.Size(202, 24);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem4.TextVisible = false;
+            // 
+            // layoutControlItem5
+            // 
+            this.layoutControlItem5.Control = this.dataGridView1;
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 24);
+            this.layoutControlItem5.Name = "layoutControlItem5";
+            this.layoutControlItem5.Size = new System.Drawing.Size(490, 174);
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem5.TextVisible = false;
+            // 
+            // layoutControlItem6
+            // 
+            this.layoutControlItem6.Control = this.label3;
+            this.layoutControlItem6.Location = new System.Drawing.Point(490, 24);
+            this.layoutControlItem6.Name = "layoutControlItem6";
+            this.layoutControlItem6.Size = new System.Drawing.Size(146, 150);
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem6.TextVisible = false;
+            // 
+            // layoutControlItem7
+            // 
+            this.layoutControlItem7.Control = this.textBox1;
+            this.layoutControlItem7.Location = new System.Drawing.Point(490, 174);
+            this.layoutControlItem7.Name = "layoutControlItem7";
+            this.layoutControlItem7.Size = new System.Drawing.Size(146, 24);
+            this.layoutControlItem7.Text = "Total corte";
+            this.layoutControlItem7.TextSize = new System.Drawing.Size(52, 13);
+            // 
+            // layoutControlItem8
+            // 
+            this.layoutControlItem8.Control = this.button1;
+            this.layoutControlItem8.Location = new System.Drawing.Point(521, 0);
+            this.layoutControlItem8.Name = "layoutControlItem8";
+            this.layoutControlItem8.Size = new System.Drawing.Size(115, 24);
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem8.TextVisible = false;
             // 
             // xENC150010
             // 
@@ -186,14 +307,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(703, 298);
-            this.Controls.Add(this.textEdit3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.Corte);
-            this.Controls.Add(this.DateHasta);
-            this.Controls.Add(this.textEdit2);
-            this.Controls.Add(this.textEdit1);
-            this.Controls.Add(this.DateDesde);
+            this.Controls.Add(this.layoutControl1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("xENC150010.IconOptions.Icon")));
             this.Location = new System.Drawing.Point(0, 0);
@@ -201,24 +315,26 @@
             this.Text = "xENC150010";
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.WindowState = System.Windows.Forms.FormWindowState.Normal;
+            this.Load += new System.EventHandler(this.xENC150010_Load);
             this.Controls.SetChildIndex(this.RibbonControl, 0);
             this.Controls.SetChildIndex(this.XtraConsoftToolBar1, 0);
-            this.Controls.SetChildIndex(this.DateDesde, 0);
-            this.Controls.SetChildIndex(this.textEdit1, 0);
-            this.Controls.SetChildIndex(this.textEdit2, 0);
-            this.Controls.SetChildIndex(this.DateHasta, 0);
-            this.Controls.SetChildIndex(this.Corte, 0);
-            this.Controls.SetChildIndex(this.dataGridView1, 0);
-            this.Controls.SetChildIndex(this.textBox1, 0);
-            this.Controls.SetChildIndex(this.textEdit3, 0);
+            this.Controls.SetChildIndex(this.layoutControl1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.RibbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LargeImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SmallImageStatus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MainApplicationMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
+            this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,13 +342,23 @@
 
         #endregion
 
-        private System.Windows.Forms.DateTimePicker DateDesde;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private System.Windows.Forms.DateTimePicker DateHasta;
-        private DevExpress.XtraEditors.SimpleButton Corte;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private DevExpress.XtraLayout.LayoutControl layoutControl1;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label1;
+        private DevExpress.XtraLayout.LayoutControlGroup Root;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
     }
 }

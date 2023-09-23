@@ -94,6 +94,7 @@
             // XtraConsoftToolBar1
             // 
             this.XtraConsoftToolBar1.Location = new System.Drawing.Point(753, 49);
+            this.XtraConsoftToolBar1.Size = new System.Drawing.Size(47, 370);
             // 
             // dataGridView1
             // 
@@ -117,6 +118,7 @@
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "xENC130010";
             this.Text = "xENC130010";
+            this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.Load += new System.EventHandler(this.xENC130010_Load);
             this.Controls.SetChildIndex(this.RibbonControl, 0);
             this.Controls.SetChildIndex(this.XtraConsoftToolBar1, 0);

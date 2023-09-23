@@ -98,6 +98,7 @@
             // XtraConsoftToolBar1
             // 
             this.XtraConsoftToolBar1.Location = new System.Drawing.Point(753, 49);
+            this.XtraConsoftToolBar1.Size = new System.Drawing.Size(47, 368);
             // 
             // GuardarbarButtonItem
             // 
@@ -114,7 +115,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 49);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(753, 370);
+            this.dataGridView1.Size = new System.Drawing.Size(753, 368);
             this.dataGridView1.TabIndex = 7;
             // 
             // xENP110010
@@ -130,6 +131,7 @@
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "xENP110010";
             this.Text = "xENP100011";
+            this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.Load += new System.EventHandler(this.xENP110010_Load);
             this.Controls.SetChildIndex(this.RibbonControl, 0);
             this.Controls.SetChildIndex(this.XtraConsoftToolBar1, 0);

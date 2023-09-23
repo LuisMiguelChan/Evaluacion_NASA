@@ -91,7 +91,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\CLS_BACKEND.cs" />
     <Compile Include="Forms\xENC120010.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +129,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Clases\" />
     <Folder Include="Controls\" />
   </ItemGroup>
   <ItemGroup>
