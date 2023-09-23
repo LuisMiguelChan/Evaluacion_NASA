@@ -106,6 +106,18 @@ namespace Evaluacion_NASA.Forms
                 MessageBox.Show($"chk_Button_ItemClick: {ex}", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                var option = new Clases.CLS_MenuOptions("ENAE");
+                option.PerformOption();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"chk_Button_ItemClick: {ex}", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
         private void DataServiceButton_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             GetDataAsync();
@@ -172,5 +184,7 @@ namespace Evaluacion_NASA.Forms
             }
         }
         #endregion
+
+        
     }
 }

@@ -32,6 +32,9 @@ namespace Evaluacion_NASA.Clases
                 case "ENAD":
                     PerformCorte();
                     break;
+                case "ENAE":
+                    PerformGraficos();
+                    break;
                 case "CPC":
                     PerformCarga();
                     break;
@@ -64,6 +67,13 @@ namespace Evaluacion_NASA.Clases
         private void PerformCorte()
         {
             using (var frm = new Evaluacion_NASAWinForms.Forms.xENC150010())
+            {
+                frm.ShowDialog();
+            }
+        }
+        private void PerformGraficos()
+        {
+            using (var frm = new Evaluacion_NASAWinForms.Forms.xENC160010())
             {
                 frm.ShowDialog();
             }
